@@ -1,6 +1,9 @@
 services:
   nginx:
     image: nginx:1.21.4
+    environment:
+      NGINX_PORT: 9000
+
 
 random_field: bad
 
@@ -11,4 +14,4 @@ continuous_previews:
 
 ingress:
   service:   nginx
-  port:      80
+  port:      9000
