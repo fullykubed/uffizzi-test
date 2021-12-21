@@ -2,6 +2,8 @@ services:
   nginx:
     image: nginx:1.21.4
 
+random_field: bad
+
 continuous_previews:
   deploy_preview_when_pull_request_is_opened: true
   delete_preview_when_pull_request_is_closed: true
