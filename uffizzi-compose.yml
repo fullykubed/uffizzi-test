@@ -1,9 +1,8 @@
 services:
   nginx:
     image: nginx:1.21.4
-    environment:
-      NGINX_PORT: 9000
-
+    env_file:
+      - .env
 
 random_field: bad
 
